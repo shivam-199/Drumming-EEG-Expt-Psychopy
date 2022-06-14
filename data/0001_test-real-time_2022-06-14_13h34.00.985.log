@@ -1,0 +1,68 @@
+8.6988 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+1508.8898 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001A2E1E424F0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001A2E1871A00>, multiSample=False, name='window1', numSamples=2, pos=(320, 180), screen=0, size=array([1280,  720]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+1508.8899 	EXP 	window1: mouseVisible = True
+1508.8899 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+1508.8899 	EXP 	window1: recordFrameIntervals = False
+1509.0548 	EXP 	window1: recordFrameIntervals = True
+1509.2404 	EXP 	Screen (0) actual frame rate measured at 59.63Hz
+1509.2404 	EXP 	window1: recordFrameIntervals = False
+1509.4098 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+1514.6128 	EXP 	Created Welcome = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Welcome', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+1514.6923 	EXP 	Created Instruction = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='Instruction', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+1514.6937 	EXP 	Created PreTrialFixation = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='PreTrialFixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+1514.6992 	EXP 	Created DuringTrialFixation = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='DuringTrialFixation', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+1514.7127 	EXP 	Sound DrumTrack set volume 1.000
+1514.7249 	EXP 	Created KeyboardResponse = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='KeyboardResponse', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+1514.7372 	EXP 	Created ThankYou = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='ThankYou', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+1514.7581 	EXP 	Welcome: autoDraw = True
+1521.5556 	DATA 	Mouse: Left button down, pos=(578,259)
+1521.5905 	DATA 	Mouse:  Left button up, pos=(578,259)
+1522.0224 	DATA 	Keypress: space
+1522.0375 	EXP 	Welcome: autoDraw = False
+1522.0375 	EXP 	Instruction: autoDraw = True
+1523.9794 	EXP 	Imported Stimulus/stimuli.csv as conditions, 14 conditions, 3 params
+1523.9855 	EXP 	Created sequence: random, trialTypes=14, nReps=2, seed=None
+1523.9862 	EXP 	New trial (rep=0, index=0): OrderedDict([('Sno', 4), ('TrackPath', 'Stimulus/drum03.wav'), ('TrackName', 'drum03')])
+1523.9911 	DATA 	Keypress: space
+1524.0009 	EXP 	Instruction: autoDraw = False
+1524.0009 	EXP 	PreTrialFixation: height = 0.05
+1524.0009 	EXP 	PreTrialFixation: height = 0.05
+1524.0009 	EXP 	PreTrialFixation: text = '+'
+1524.0009 	EXP 	PreTrialFixation: autoDraw = True
+1534.0825 	EXP 	PreTrialFixation: autoDraw = False
+1534.0825 	EXP 	DuringTrialFixation: autoDraw = True
+1563.7115 	EXP 	DuringTrialFixation: autoDraw = False
+1563.7115 	EXP 	KeyboardResponse: autoDraw = True
+1566.7015 	DATA 	Mouse: Left button down, pos=(1155,202)
+1566.7967 	DATA 	Mouse:  Left button up, pos=(1155,202)
+1567.4124 	EXP 	New trial (rep=0, index=1): OrderedDict([('Sno', 11), ('TrackPath', 'Stimulus/drum09.wav'), ('TrackName', 'drum09')])
+1567.4142 	DATA 	Keypress: 9
+1567.4267 	EXP 	KeyboardResponse: autoDraw = False
+1567.4267 	EXP 	PreTrialFixation: text = '+'
+1567.4267 	EXP 	PreTrialFixation: autoDraw = True
+1577.7733 	EXP 	PreTrialFixation: autoDraw = False
+1577.7733 	EXP 	PreTrialFixation: autoDraw = False
+1577.7733 	EXP 	DuringTrialFixation: autoDraw = True
+1607.4353 	EXP 	DuringTrialFixation: autoDraw = False
+1607.4353 	EXP 	KeyboardResponse: autoDraw = True
+1610.1594 	DATA 	Mouse: Left button down, pos=(201,285)
+1610.2570 	DATA 	Mouse:  Left button up, pos=(201,285)
+1610.8536 	EXP 	New trial (rep=0, index=2): OrderedDict([('Sno', 9), ('TrackPath', 'Stimulus/drum07.wav'), ('TrackName', 'drum07')])
+1610.8553 	DATA 	Keypress: 8
+1610.8682 	EXP 	KeyboardResponse: autoDraw = False
+1610.8682 	EXP 	PreTrialFixation: text = '+'
+1610.8682 	EXP 	PreTrialFixation: autoDraw = True
+1621.2150 	EXP 	PreTrialFixation: autoDraw = False
+1621.2150 	EXP 	PreTrialFixation: autoDraw = False
+1621.2150 	EXP 	DuringTrialFixation: autoDraw = True
+1650.8775 	EXP 	DuringTrialFixation: autoDraw = False
+1650.8775 	EXP 	KeyboardResponse: autoDraw = True
+1653.2781 	EXP 	New trial (rep=0, index=3): OrderedDict([('Sno', 2), ('TrackPath', 'Stimulus/drum01part02.wav'), ('TrackName', 'drum01part02')])
+1653.2802 	DATA 	Keypress: 7
+1653.2933 	EXP 	KeyboardResponse: autoDraw = False
+1653.2933 	EXP 	PreTrialFixation: text = '+'
+1653.2933 	EXP 	PreTrialFixation: autoDraw = True
+1660.8110 	DATA 	Mouse: Left button down, pos=(890,331)
+1660.9114 	DATA 	Mouse:  Left button up, pos=(890,331)
+1661.6114 	DATA 	Keypress: escape
+1662.5699 	EXP 	window1: mouseVisible = True

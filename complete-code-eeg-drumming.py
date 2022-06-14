@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.1.3),
-    on May 28, 2022, at 11:43
+    on June 14, 2022, at 12:34
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -56,7 +56,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='E:\\studies\\college\\IIT Gandhinagar\\SEM III\\Internship\\Experimental Design\\PsychopyTest\\test-real-time.py',
+    originPath='E:\\studies\\college\\IIT Gandhinagar\\SEM III\\Internship\\Experimental Design\\Drumming-EEG-Expt-Psychopy\\test-real-time.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -67,11 +67,11 @@ endExpNow = False  # flag for 'escape' or other condition => quit the exp
 frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # Start Code - component code to be run after the window creation
-
+outlet.push_sample(["ExptBeg"])
 # Setup the Window
 win = visual.Window(
-    size=[1536, 864], fullscr=True, screen=0, 
-    winType='pyglet', allowGUI=False, allowStencil=False,
+    size=[1280, 720], fullscr=False, screen=0, 
+    winType='pyglet', allowGUI=True, allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
     units='height')
@@ -110,7 +110,7 @@ key_resp = keyboard.Keyboard()
 # Initialize components for Routine "InstructionScreen"
 InstructionScreenClock = core.Clock()
 Instruction = visual.TextStim(win=win, name='Instruction',
-    text='Your task is to listen to the played music and respond to the questions shown. The exact procedure is as follows.\n\n1. 5 to 10 seconds of silence, focus on the white cross on the screen, and relax.\n\n2. Listen to the music played in a relaxed state. Try not to make any body movements except natural blinking.\n\n3. Respond to the questions after each music listening trial, the answer should be according to the previously played track.\n\nRemember to focus on the white cross in the center of the screen at all times, and avoid head, finger, limb, and torso movements (no need to worry if you did move).\n\nRelax, breathe normally, clarify doubts if any, and press SPACE to continue.',
+    text='Your task is to listen to the played music and respond to the questions shown. The exact procedure is as follows.\n\n1. 10 seconds of silence, focus on the white cross on the screen, and relax.\n\n2. Listen to the music played in a relaxed state. Try not to make any body movements except natural eye blinks.\n\n3. Respond to the questions after each music listening trial, the answer should be according to the previously played track.\n\nRemember to focus on the white cross in the center of the screen at all times, and avoid head, finger, limb, and torso movements (no need to worry if you did move).\n\nRelax, breathe normally, clarify doubts if any, and press SPACE to continue.',
     font='Open Sans',
     pos=(0, 0), height=0.04, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -131,7 +131,7 @@ PreTrialFixation = visual.TextStim(win=win, name='PreTrialFixation',
 # Initialize components for Routine "AudioAndFixation"
 AudioAndFixationClock = core.Clock()
 DuringTrialFixation = visual.TextStim(win=win, name='DuringTrialFixation',
-    text='',
+    text='+',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -373,7 +373,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials = data.TrialHandler(nReps=1.0, method='random', 
+trials = data.TrialHandler(nReps=2.0, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('Stimulus/stimuli.csv'),
     seed=None, name='trials')
@@ -393,9 +393,9 @@ for thisTrial in trials:
     
     # ------Prepare to start Routine "StimulusFixation"-------
     continueRoutine = True
-    routineTimer.add(5.000000)
+    routineTimer.add(10.000000)
     # update component parameters for each repeat
-    PreTrialFixation.setText("+")
+    PreTrialFixation.setText('+')
     # keep track of which components have finished
     StimulusFixationComponents = [PreTrialFixation]
     for thisComponent in StimulusFixationComponents:
@@ -431,7 +431,7 @@ for thisTrial in trials:
             PreTrialFixation.setAutoDraw(True)
         if PreTrialFixation.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > PreTrialFixation.tStartRefresh + 5-frameTolerance:
+            if tThisFlipGlobal > PreTrialFixation.tStartRefresh + 10-frameTolerance:
                 # keep track of stop time/frame for later
                 PreTrialFixation.tStop = t  # not accounting for scr refresh
                 PreTrialFixation.frameNStop = frameN  # exact frame index
@@ -465,10 +465,9 @@ for thisTrial in trials:
     
     # ------Prepare to start Routine "AudioAndFixation"-------
     continueRoutine = True
-    routineTimer.add(10.000000)
+    routineTimer.add(30.000000)
     # update component parameters for each repeat
-    DuringTrialFixation.setText('+')
-    DrumTrack.setSound(TrackPath, secs=10, hamming=True)
+    DrumTrack.setSound(TrackPath, secs=30, hamming=True)
     DrumTrack.setVolume(1.0, log=False)
     # keep track of which components have finished
     AudioAndFixationComponents = [DuringTrialFixation, DrumTrack]
@@ -505,14 +504,14 @@ for thisTrial in trials:
             DuringTrialFixation.setAutoDraw(True)
         if DuringTrialFixation.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > DuringTrialFixation.tStartRefresh + 10-frameTolerance:
+            if tThisFlipGlobal > DuringTrialFixation.tStartRefresh + 30-frameTolerance:
                 # keep track of stop time/frame for later
                 DuringTrialFixation.tStop = t  # not accounting for scr refresh
                 DuringTrialFixation.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(DuringTrialFixation, 'tStopRefresh')  # time at next scr refresh
                 DuringTrialFixation.setAutoDraw(False)
         # start/stop DrumTrack
-        if DrumTrack.status == NOT_STARTED and t >= 0.0-frameTolerance:
+        if DrumTrack.status == NOT_STARTED and t >= 0-frameTolerance:
             # keep track of start time/frame for later
             DrumTrack.frameNStart = frameN  # exact frame index
             DrumTrack.tStart = t  # local t and not account for scr refresh
@@ -520,7 +519,7 @@ for thisTrial in trials:
             DrumTrack.play()  # start the sound (it finishes automatically)
         if DrumTrack.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > DrumTrack.tStartRefresh + 10-frameTolerance:
+            if tThisFlipGlobal > DrumTrack.tStartRefresh + 30-frameTolerance:
                 # keep track of stop time/frame for later
                 DrumTrack.tStop = t  # not accounting for scr refresh
                 DrumTrack.frameNStop = frameN  # exact frame index
@@ -659,7 +658,7 @@ for thisTrial in trials:
     trials.addData('key_resp_3.stopped', key_resp_3.tStopRefresh)
     # the Routine "EnjoymentRating" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
-# completed 1.0 repeats of 'trials'
+# completed 2.0 repeats of 'trials'
 
 
 # ------Prepare to start Routine "FinalScreen"-------
@@ -725,6 +724,7 @@ while continueRoutine and routineTimer.getTime() > 0:
         win.flip()
 
 # -------Ending Routine "FinalScreen"-------
+outlet.push_sample(["ExptEnd"])
 for thisComponent in FinalScreenComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
