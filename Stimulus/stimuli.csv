@@ -12,4 +12,5 @@ Sno,TrackPath,TrackName
 11,Stimulus/drum09.wav,drum09
 12,Stimulus/drum10.wav,drum10
 13,Stimulus/drum11.wav,drum11
-14,Stimulus/mixed_audio.wav,mixed
+14,Stimulus/mixed_audio.wav,mix
+15,Stimulus/mixed_audio_reverse.wav,mix-rev
